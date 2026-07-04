@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>📖 答案之书</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 背景装饰 -->
+    <div class="bg-decoration"></div>
+
+    <!-- 主容器 -->
+    <div class="container">
+        <!-- 标题 -->
+        <h1 class="title">📖 答案之书</h1>
+        <p class="subtitle">在心里默念你的问题，然后翻开书页</p>
+
+        <!-- 书本体 -->
+        <div class="book" id="book">
+            <!-- 书的封面（初始状态可见） -->
+            <div class="book-cover" id="bookCover">
+                <div class="cover-text">
+                    <span class="cover-icon">✨</span>
+                    <span>答 案 之 书</span>
+                    <span class="cover-hint">点击翻开</span>
+                </div>
+            </div>
+
+            <!-- 翻开后的页面（初始隐藏） -->
+            <div class="book-page" id="bookPage">
+                <div class="page-content">
+                    <p class="answer-label">你的答案是</p>
+                    <p class="answer-text" id="answerText">现在还不是时候</p>
+                    <div class="page-line"></div>
+                    <p class="page-number" id="pageNumber">#1</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 操作按钮 -->
+        <button class="flip-btn" id="flipBtn">🪄 再次提问</button>
+        <p class="hint-text">点击书或按钮翻开</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
